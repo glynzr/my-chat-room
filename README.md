@@ -24,25 +24,31 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Chat room with several features : message encryption, multiple rooms and etc.
+The app has been written with the help of NestJs.
+For working the app code, we will need to install yarn,Postgresql,and nestjs framework(nestjs can be installed via yarn).
 
-## Installation
+## Configuration 
 
 ```bash
+$ cp .env.example .env.local
+$ cd ./frontend
+$ cd .env.example .env.local
+$yarn
+$ cd ..
 $ yarn install
+
+Additionally,we will need to start postgresql service on our machine.We should create database whose name should be same with the database name in /my-chat-room/.env.local file.
 ```
 
 ## Running the app
 
 ```bash
-# development
-$ yarn run start
-
-# watch mode
+#in my-chat-room/ folder:
 $ yarn run start:dev
 
-# production mode
-$ yarn run start:prod
+# in my-chat-room/frontend folder:
+$ yarn vite
 ```
 
 ## Test
@@ -58,15 +64,6 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
